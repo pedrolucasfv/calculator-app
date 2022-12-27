@@ -3,24 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap'); 
     .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size: 11px; text-align: center; }
+
+    body {
+      font-size: 32px;
+      font-weight: 600;
+      font-family: 'League Spartan';
+      width: 25.2rem;
+    }
+    #keypad {
+      background-color: hsl(223, 31%, 20%);
+      display: grid;
+      grid-template-columns: 5rem 5rem 5rem 5rem;
+      grid-template-rows: 3rem 3rem 3rem 3rem 3rem;
+      grid-gap: 1rem;
+      padding: 1.2rem;
+      border-radius: 0.6rem;
+    }
+    #keypad div {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.6rem;
+    }
+    div #reset {
+      font-size: 22px;
+      grid-column: 1/3;
+      color: white;
+      background-color: hsl(225, 21%, 49%);
+    }
+    div #del {
+      font-size: 22px;
+      color: white;
+      background-color: hsl(225, 21%, 49%);
+    }
+    div #equal {
+      grid-column: 3/5;
+      font-size: 22px;
+      background-color: hsl(6, 63%, 50%);
+      color: white;
+    }
   </style>
 </head>
 <body>
 
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div id='keypad'>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div id="del">DEL</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>+</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>-</div>
+    <div>.</div>
+    <div>0</div>
+    <div>/</div>
+    <div>x</div>
+    <div id="reset">RESET</div>
+    <div id="equal">=</div>
   </div>
+  
+ 
 </body>
 </html>
+
+<!--
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Your Name Here</a>.
+</div>-->
