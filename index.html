@@ -5,117 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap'); 
-    .attribution a { color: hsl(228, 45%, 44%); }
-    .attribution { font-size: 11px; text-align: center; }
-
-    body {
-      font-size: 32px;
-      font-weight: 600;
-      font-family: 'League Spartan';
-      width: 25.2rem;
-      background: hsl(222, 26%, 31%);
-    }
-    #keypad {
-      background-color: hsl(223, 31%, 20%);
-      display: grid;
-      grid-template-columns: 5rem 5rem 5rem 5rem;
-      grid-template-rows: 3rem 3rem 3rem 3rem 3rem;
-      grid-gap: 1rem;
-      padding: 1.2rem;
-      border-radius: 0.6rem;
-    }
-    #keypad div {
-      background-color: white;
-      color: hsl(60, 10%, 19%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 0.6rem;
-      box-shadow: 0 3px hsl(28, 16%, 65%);
-     
-    }
-    div #reset {
-      font-size: 22px;
-      grid-column: 1/3;
-      color: white;
-      background-color: hsl(225, 21%, 49%);
-      box-shadow: 0 3px hsl(224, 28%, 35%);
-    }
-    div #del {
-      font-size: 22px;
-      color: white;
-      background-color: hsl(225, 21%, 49%);
-      box-shadow: 0 3px hsl(224, 28%, 35%);
-    }
-    div #equal {
-      grid-column: 3/5;
-      font-size: 22px;
-      background-color: hsl(6, 63%, 50%);
-      box-shadow: 0 3px hsl(6, 70%, 34%);
-      color: white;
-    }
-    div #header {
-      display: flex;
-      justify-content: space-between;
-      font-size: 1.5rem;
-      color: white;
-      align-items: flex-end;
-    }
-    div #theme{
-      display: flex;
-      text-transform: uppercase;
-      align-items: flex-end;
-
-    }
-    div #toggle{
-      margin-left: 1rem;
-      display: grid;
-      grid-template-columns: 1.5rem 1.5rem 1.5rem;
-      grid-template-rows: 1.5rem 1.5rem;
-    }
-    div #toggleButton {
-      background-color: red;
-      grid-column: 1;
-      grid-row: 2;
-      z-index: 2;
-      border-radius: 50%;
-      margin: 0.3rem;
-    }
-    div #toogleBackground {
-      grid-column: 1/4;
-      grid-row: 2;
-      background-color: hsl(223, 31%, 20%);
-      border-radius: 2.5rem;
-    }
-  </style>
+  
 </head>
 <body>
   <div id="wrapper">
-    <div id="header">
+    <div class="header">
       <div> calc </div>
-      <div id="theme">
+      <div class="theme">
         <div>theme</div>
-        <div id="toggle">
+        <div class="toggle">
           <div>1</div>
           <div>2</div>
           <div>3</div>
-          <div id="toggleButton"></div>
-          <div id="toogleBackground"></div>
+          <div class="toggleButton"></div>
+          <div class="toogleBackground"></div>
         </div>
       </div>
     </div>
     
-    <div id='keypad'>
+    <div class="screen">
+      <div>
+      399,981
+    </div>
+    </div>
+
+    <div class="keypad">
     <div>7</div>
     <div>8</div>
     <div>9</div>
-    <div id="del">DEL</div>
+    <div class="especial">DEL</div>
     <div>4</div>
     <div>5</div>
     <div>6</div>
@@ -128,8 +51,8 @@
     <div>0</div>
     <div>/</div>
     <div>x</div>
-    <div id="reset">RESET</div>
-    <div id="equal">=</div>
+    <div id="reset" class="especial">RESET</div>
+    <div id="equal" class="especial">=</div>
   </div>
   
 </div>
