@@ -6,8 +6,17 @@ body {
   font-size: 32px;
   font-weight: 600;
   font-family: 'League Spartan';
-  width: 25.2rem;
   background: hsl(222, 26%, 31%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+
 }
 .keypad {
   background-color: hsl(223, 31%, 20%);
@@ -58,7 +67,6 @@ div #equal {
 }
 .toggleButton {
   background-color: red;
-  grid-column: 1;
   grid-row: 2;
   z-index: 2;
   border-radius: 50%;
@@ -101,6 +109,6 @@ border-radius: 0.8rem;
     padding: 2rem 1.5rem;
 }
 
-.key{
+.key, #theme-one, #theme-two, #theme-three{
   cursor: pointer;
 }
