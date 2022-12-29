@@ -1,0 +1,34 @@
+   body .theme2 {
+    background: hsl(0, 0%, 90%);
+  }
+  .keypad .theme2{
+    background-color: hsl(0, 5%, 81%);
+    color: hsl(60, 10%, 19%);
+  }
+  .key .theme2{
+    background-color: hsl(45, 7%, 89%);
+    box-shadow: 0 3px hsl(35, 11%, 61%);
+  }
+  div .theme2 #equal {
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0 3px hsl(25, 99%, 27%);
+  }
+  .header .theme2{
+    color: hsl(60, 10%, 19%);
+  
+  }
+  .toggleButton .theme2 {
+    background-color: hsl(25, 98%, 40%);
+  }
+  .toggleBackground .theme2 {
+    background-color: hsl(0, 5%, 81%);
+  }
+  div .especial .theme2{
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0 3px hsl(185, 58%, 25%);
+  }
+  
+  .screen .theme2{
+  color: hsl(60, 10%, 19%);
+  background-color: hsl(0, 0%, 93%);
+  }
