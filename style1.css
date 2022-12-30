@@ -1,34 +1,36 @@
-body .theme1 {
+.theme1 .wrapper {
     background: hsl(222, 26%, 31%);
   }
-.keypad .theme1 {
+  .theme1 .keypad  {
+    background-color: hsl(223, 31%, 20%);
+   
+}
+.theme1 .key{
     background-color: white;
     color: hsl(60, 10%, 19%);
     box-shadow: 0 3px hsl(28, 16%, 65%);
 }
-.keypad .theme1 > div{
-    background-color: white;
-}
-div .theme1 #equal {
+.theme1 #equal {
     background-color: hsl(6, 63%, 50%);
   box-shadow: 0 3px hsl(6, 70%, 34%);
+  color: white;
 }
-.header .theme1{
+.theme1 .header {
     color: white;
   }
-  .toggleButton .theme1 {
+  .theme1 .toggleButton  {
     background-color: red;
   }
-  .toggleBackground .theme1 {
+  .theme1 .toggleBackground {
     background-color: hsl(223, 31%, 20%);
   }
-   div .theme1 .special .key{
+   .theme1 .special .key{
     color: white;
     background-color: hsl(225, 21%, 49%);
     box-shadow: 0 3px hsl(224, 28%, 35%);
   }
   
-  .screen .theme1{
+  .theme1 .screen {
     color: white;
     background-color: hsl(224, 36%, 15%);
   }
