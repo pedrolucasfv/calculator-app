@@ -1,4 +1,5 @@
-const toggle = document.querySelector(".toggleButton");
+const toggleButton = document.querySelector(".toggleButton");
+const toggleBackground = document.querySelector(".toggleBackground")
 const numbers = document.querySelectorAll("#number");
 const themeOne = document.getElementById("theme-one");
 const themeTwo = document.getElementById("theme-two");
@@ -14,6 +15,27 @@ const keys = document.querySelectorAll('.key');
 let memory1;
 let memory2;
 let op;
+
+function toggleTheme(theme, toggle1) {
+  if(toggle1 == 'add'){
+  keypad.classList.add(theme)
+  keys.forEach(function(key) {
+    key.classList.add(theme)
+  })
+  screenClass.classList.add(theme)
+  header.classList.add(theme)
+  toggleBackground.classList.add(theme)
+}
+  if(toggle1 == 'remove'){
+    keypad.classList.add(theme)
+    keys.forEach(function(key) {
+      key.classList.add(theme)
+    })
+    screenClass.classList.add(theme)
+    header.classList.add(theme)
+    toggleBackground.classList.add(theme)
+  }
+}
 
 function resultOp() {
   memory2 = screenId.innerText;
@@ -43,34 +65,43 @@ function resultOp() {
 }
 
 themeOne.addEventListener("click", function (event) {
-  if (toggle.classList.contains("togglePosition2")){
-    toggle.classList.remove("togglePosition2");
-    keypad.classList.remove("theme2")
+  if (toggleButton.classList.contains("togglePosition2")){
+    toggleButton.classList.remove("togglePosition2");
+    toggleTheme('theme2', 'remove')
   }
 
-  else if (toggle.classList.contains("togglePosition3"))
-    toggle.classList.remove("togglePosition3");
-  toggle.classList.add("togglePosition1");
+  else if (toggle.classList.contains("togglePosition3")){
+  toggleButton.classList.remove("togglePosition3");
+  toggleTheme('theme3', 'remove')
+  }
+  toggleButton.classList.add("togglePosition1");
+  toggleTheme('theme1', 'add')
 });
+
 themeTwo.addEventListener("click", function (event) {
-  if (toggle.classList.contains("togglePosition1"))
-    toggle.classList.remove("togglePosition1");
-  else if (toggle.classList.contains("togglePosition3"))
-    toggle.classList.remove("togglePosition3");
-  toggle.classList.add("togglePosition2");
-  keypad.classList.add("theme3")
-  keys.forEach(function(key) {
-    key.classList.add("theme3")
-  })
-  screenClass.classList.add("theme3")
-  header.classList.add("theme3")
+  if (toggleButton.classList.contains("togglePosition1")){
+  toggleButton.classList.remove("togglePosition1");
+  toggleTheme('theme1', 'remove')
+  }
+  else if (toggleButton.classList.contains("togglePosition3")){
+  toggleButton.classList.remove("togglePosition3");
+  toggleTheme('theme3', 'remove')
+  }
+  toggleButton.classList.add("togglePosition2");
+  toggleTheme('theme2', 'add')
 });
+
 themeThree.addEventListener("click", function (event) {
-  if (toggle.classList.contains("togglePosition1"))
-    toggle.classList.remove("togglePosition1");
-  else if (toggle.classList.contains("togglePosition2"))
-    toggle.classList.remove("togglePosition2");
-  toggle.classList.add("togglePosition3");
+  if (toggleButton.classList.contains("togglePosition1")){
+     toggleButton.classList.remove("togglePosition1");
+     toggleTheme('theme1', 'remove')
+  }
+  else if (toggleButton.classList.contains("togglePosition2")){
+     toggleButton.classList.remove("togglePosition2");
+    toggleTheme('theme2', 'remove')
+  }
+  toggleButton.classList.add("togglePosition3");
+  toggleTheme('theme3', 'add')
 });
 
 keys.forEach(function (key) {
