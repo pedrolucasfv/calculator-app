@@ -1,11 +1,12 @@
-.theme1 .wrapper {
-    background: hsl(222, 26%, 31%);
-  }
-  .theme1 .keypad  {
+body.theme1{
+  background: hsl(222, 26%, 31%);
+}
+
+  .theme1.keypad  {
     background-color: hsl(223, 31%, 20%);
    
 }
-.theme1 .key{
+.theme1.key{
     background-color: white;
     color: hsl(60, 10%, 19%);
     box-shadow: 0 3px hsl(28, 16%, 65%);
@@ -15,22 +16,22 @@
   box-shadow: 0 3px hsl(6, 70%, 34%);
   color: white;
 }
-.theme1 .header {
+.theme1.header {
     color: white;
   }
-  .theme1 .toggleButton  {
+  .theme1.toggleButton  {
     background-color: red;
   }
-  .theme1 .toggleBackground {
+  .theme1.toggleBackground {
     background-color: hsl(223, 31%, 20%);
   }
-   .theme1 .special .key{
+   .theme1.special .key{
     color: white;
     background-color: hsl(225, 21%, 49%);
     box-shadow: 0 3px hsl(224, 28%, 35%);
   }
   
-  .theme1 .screen {
+  .theme1.screen {
     color: white;
     background-color: hsl(224, 36%, 15%);
   }

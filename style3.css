@@ -1,32 +1,35 @@
-  .theme3 .keypad {
+body.theme3{
+  background: hsl(268, 75%, 9%);
+}
+  .theme3.keypad {
     background-color: hsl(268, 71%, 12%);
     color: hsl(52, 100%, 62%);
   }
-  .theme3 .key {
+  .theme3.key {
     background-color: hsl(281, 89%, 26%);
     box-shadow: 0 3px  hsl(285, 91%, 52%);
   }
-  .theme3 #equal {
+  .theme3#equal {
     background-color: hsl(176, 100%, 44%);
     box-shadow: 0 3px hsl(177, 92%, 70%);
     color: hsl(198, 20%, 13%);
   }
-  .theme3 .header {
+  .theme3.header {
     color: hsl(52, 100%, 62%);
   }
-  .theme3 .toggleButton {
+  .theme3.toggleButton {
     background-color: hsl(176, 100%, 44%);
   }
-  .theme3 .toggleBackground {
+  .theme3.toggleBackground {
     background-color: hsl(268, 71%, 12%);
   }
-  .theme3 .especial {
+  .theme3.especial {
     background-color: hsl(268, 47%, 21%);
     box-shadow: 0 3px hsl(290, 70%, 36%);
     color: hsl(0, 0%, 100%);
   }
   
-  .theme3 .screen{
+  .theme3.screen{
   color: hsl(52, 100%, 62%);
   background-color: hsl(268, 71%, 12%);
   }

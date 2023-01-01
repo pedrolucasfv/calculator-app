@@ -11,6 +11,7 @@ const screenClass = document.querySelector(".screen");
 const header = document.querySelector('.header');
 const keypad = document.querySelector('.keypad');
 const keys = document.querySelectorAll('.key');
+const body = document.querySelector('body');
 
 let memory1;
 let memory2;
@@ -25,6 +26,7 @@ function toggleTheme(theme, toggle1) {
   screenClass.classList.add(theme)
   header.classList.add(theme)
   toggleBackground.classList.add(theme)
+  body.classList.add(theme)
 }
   if(toggle1 == 'remove'){
     keypad.classList.remove(theme)
@@ -34,6 +36,7 @@ function toggleTheme(theme, toggle1) {
     screenClass.classList.remove(theme)
     header.classList.remove(theme)
     toggleBackground.classList.remove(theme)
+    body.classList.remove(theme)
   }
 }
 
