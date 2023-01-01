@@ -27,13 +27,13 @@ function toggleTheme(theme, toggle1) {
   toggleBackground.classList.add(theme)
 }
   if(toggle1 == 'remove'){
-    keypad.classList.add(theme)
+    keypad.classList.remove(theme)
     keys.forEach(function(key) {
-      key.classList.add(theme)
+      key.classList.remove(theme)
     })
-    screenClass.classList.add(theme)
-    header.classList.add(theme)
-    toggleBackground.classList.add(theme)
+    screenClass.classList.remove(theme)
+    header.classList.remove(theme)
+    toggleBackground.classList.remove(theme)
   }
 }
 
