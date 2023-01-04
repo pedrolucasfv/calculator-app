@@ -17,8 +17,8 @@ let memory1;
 let memory2;
 let op;
 
-function toggleTheme(theme, toggle1) {
-  if(toggle1 == 'add'){
+function toggleTheme(theme, toggle) {
+  if(toggle == 'add'){
   keypad.classList.add(theme)
   keys.forEach(function(key) {
     key.classList.add(theme)
@@ -28,7 +28,7 @@ function toggleTheme(theme, toggle1) {
   toggleBackground.classList.add(theme)
   body.classList.add(theme)
 }
-  if(toggle1 == 'remove'){
+  if(toggle == 'remove'){
     keypad.classList.remove(theme)
     keys.forEach(function(key) {
       key.classList.remove(theme)
