@@ -1,4 +1,7 @@
-## Screenshots
+## About
+i made this project to improve my javascript skills without reactJS.
+
+## Screenshot
 
 ### Desktop:
 
